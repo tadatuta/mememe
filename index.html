@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Меминг — поиск по каталогу</title><meta name="description" content="Найдите мем по названию, фразе или описанию."><link rel="icon" href="data:,"><link rel="stylesheet" href="./style.css"><script type="module" src="./modules/search-pages/client/app.js"></script></head>
+<body>
+<header class="header"><a class="header__name" href="./">Меминг</a><span class="header__label">Поиск по каталогу</span></header>
+<main class="search" id="main">
+<section class="search__intro"><h1 class="search__logo" aria-label="Меминг"><span>М</span><span>е</span><span>м</span><span>и</span><span>н</span><span>г</span></h1><p class="search__tagline">Найдите мем по названию, фразе или описанию.</p></section>
+<form class="search__form" id="form"><label class="search__label" for="query">Поисковый запрос</label><div class="search__field"><svg class="search__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><textarea id="query" class="search__input" rows="2" maxlength="4000" placeholder="Введите название, фразу или описание" required></textarea><button class="search__clear" id="clear" type="button" aria-label="Очистить запрос" hidden>×</button></div><div class="search__actions"><button class="search__submit" id="submit" type="submit">Найти мем</button><span class="search__shortcut">Ctrl / ⌘ + Enter</span></div></form>
+<div class="search__examples" id="examples"><span>Например</span><button type="button">Двойная Содовая</button><button type="button">Исповедь медведя</button></div>
+<section class="results" id="results" aria-label="Результаты поиска" hidden><div class="results__heading"><h2 id="result-title" tabindex="-1"></h2><span id="result-meta" role="status"></span></div><div class="results__grid" id="grid"></div></section>
+</main><footer class="footer"><span>Мемы из Meming Wiki</span><span>Поиск учитывает опечатки</span></footer>
+<dialog class="preview" id="preview"><button class="preview__close" id="close-preview" aria-label="Закрыть">×</button><img class="preview__image" id="preview-image" alt=""><div class="preview__body"><h2 id="preview-title"></h2><p id="preview-why"></p><a id="preview-source" target="_blank" rel="noopener noreferrer">Статья о меме ↗</a><a id="preview-original" target="_blank" rel="noopener noreferrer">Открыть изображение ↗</a></div></dialog>
+</body></html>
